@@ -1,6 +1,6 @@
 ﻿<?php
 
-define('BOT_TOKEN', '261104624:AAGRaO91BlNhrMQAaB7qcjKObYcP8NSlm8o');
+define('BOT_TOKEN', '288823786:AAEnuB_wArfV-Qt1lResJVTLOcANG5Etj58');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -139,8 +139,8 @@ function processMessage($message) {
 Creating a robot 👉* /crtoken
 
 *Note that the command 📌* `/setinline` *in* @BotFather *inline capabilities enable your robot ...*
-- *dev* : @Vahshi_typer
-- *channel* : @Red_Ch
+- *dev* : @ho3eindeltabot
+- *channel* : @shaghestan
 ',"parse_mode"=>"MARKDOWN","disable_web_page_preview"=>"true"));
 
 
@@ -160,7 +160,7 @@ $pmembersid= explode("\n",$txxt);
       apiRequest("sendMessage", array('chat_id' => $chat_id,  "text" => "All robots: ".$tcount,"parse_mode"=>"HTML"));        
     }
     }else if ($text == "/crtoken") {
-      apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "[.](https://telegram.me/red_ch)","parse_mode"=>"MARKDOWN"));
+      apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "[برای اموزش ساخت کلیک کنید](https://telegram.me/red_ch)","parse_mode"=>"MARKDOWN"));
     }
     else if ($matches[0] == "/update"&& strpos($matches[1], ":")==true) {
       $txtt = file_get_contents('tokens.txt');
@@ -177,7 +177,7 @@ $pmembersid= explode("\n",$txxt);
         $phptext = str_replace("**TOKEN**",$matches[1],$phptext);
         $phptext = str_replace("**ADMIN**",$chat_id,$phptext);
         file_put_contents($id.'/pvresan.php',$phptext);
-        file_get_contents('https://api.telegram.org/bot'.$matches[1].'/setwebhook?url=https://editnakon-shervin921.rhcloud.com/XObot/'.$chat_id.'/pvresan.php');
+        file_get_contents('https://api.telegram.org/bot'.$matches[1].'/setwebhook?url=https://donteditsaz-darkhand.rhcloud.com/'.$chat_id.'/pvresan.php');
         apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🔹ربات شما آپديت شد\nکل قابلیت های جدید به ربات شما اضافه شد ...😃"));
       }else{
                 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🔹اين ربات قبلا در سرور من ثبت نشده ...\nاگر ربات خود را نساخته ايد هم اكنون ربات خود را بسازيد 😃🖐"));
@@ -214,12 +214,12 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🤖 چند ل
         $phptext = str_replace("**ADMIN**",$chat_id,$phptext);
         file_put_contents($token.$id.'/pvresan.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=https://editnakon-shervin921.rhcloud.com/XObot/'.$chat_id.'/pvresan.php');
+        file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=https://donteditsaz-darkhand.rhcloud.com/'.$chat_id.'/pvresan.php');
     $unstalled = "🔶 ربات شما با موفقيت ساخته شد 😃🖐
 🔸ربات را استارت كرده و روي دكمه شروع بازي كليك كنيد ...❤️👍
 🔺توجه داشته باشيد حالت اينلاين ربات بايد فعال باشد ...";
     
-    $bot_url    = "https://api.telegram.org/bot261104624:AAGRaO91BlNhrMQAaB7qcjKObYcP8NSlm8o/"; 
+    $bot_url    = "https://api.telegram.org/bot288823786:AAEnuB_wArfV-Qt1lResJVTLOcANG5Etj58/"; 
     $url        = $bot_url . "sendMessage?chat_id=" . $chat_id ; 
 
 $post_fields = array('chat_id'   => $chat_id, 
@@ -292,12 +292,12 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🤖 چند ل
         $phptext = str_replace("**ADMIN**",$matches[1],$phptext);
         file_put_contents($token.$id.'/pvresan.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=https://editnakon-shervin921.rhcloud.com/XObot/'.$id.'/pvresan.php');
+        file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=https://donteditsaz-darkhand.rhcloud.com/'.$id.'/pvresan.php');
     $unstalled = "🔶 ربات شما با موفقيت ساخته شد 😃🖐
 🔸ربات را استارت كرده و روي دكمه شروع بازي كليك كنيد ...❤️👍
 🔺توجه داشته باشيد حالت اينلاين ربات بايد فعال باشد ...";
     
-    $bot_url    = "https://api.telegram.org/bot261104624:AAGRaO91BlNhrMQAaB7qcjKObYcP8NSlm8o/"; 
+    $bot_url    = "https://api.telegram.org/bot288823786:AAEnuB_wArfV-Qt1lResJVTLOcANG5Etj58/"; 
     $url        = $bot_url . "sendMessage?chat_id=" . $chat_id ; 
 
 $post_fields = array('chat_id'   => $chat_id, 
